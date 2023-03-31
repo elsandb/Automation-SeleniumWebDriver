@@ -7,7 +7,7 @@ from time import sleep
 from selenium.common.exceptions import NoSuchElementException
 import os
 
-# You will se "no:" before Norwegian words in the #comments.
+# I've put in "no:" before Norwegian words in the #comments.
 
 # CONSTANTS
 MY_EMAIL = os.environ['MY_EMAIL']
@@ -23,7 +23,7 @@ wait = WebDriverWait(driver, 10)
 
 
 def check_toast_item():
-    """If there are any toast-items, they will be closed. (Toast-item: The confirmation message
+    """If there are any 'toast-items', they will be closed. (Toast-item: The confirmation message
     that show up in the lower left corner when you click 'save' or 'follow'.)"""
     toast_exist = True
     while toast_exist:
@@ -34,7 +34,7 @@ def check_toast_item():
             toast_exist = False
         else:
             dismiss_toast_button.click()
-            # print('---- Toast was eaten.')
+            # print('---- Toast was eaten 🫠')
             sleep(3)
 
 
@@ -94,10 +94,7 @@ for result in search_results[:5]:   # Here I only go through the first 5 posting
     sleep(3)
 # -------------------- Done ---------------------- #
 
-# For those who are interested: Console output -->
-
-# C:\Users\Bruker\miniconda3\python.exe "C:\Users\Bruker\Dropbox\Koding\PycharmProjects\
-# hundred_days_of_code\Day 49 Automatic job applications on LinkedIn\main.py"
+# # # Console output:
 # Log in done
 #
 # * Frontend Developer *
