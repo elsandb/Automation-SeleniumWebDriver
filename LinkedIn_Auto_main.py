@@ -7,7 +7,7 @@ from time import sleep
 from selenium.common.exceptions import NoSuchElementException
 import os
 
-# I've put in "no:" before Norwegian words in the #comments.
+# "no:" = Norwegian (in the #comments).
 
 # CONSTANTS
 MY_EMAIL = os.environ['MY_EMAIL']
@@ -34,7 +34,7 @@ def check_toast_item():
             toast_exist = False
         else:
             dismiss_toast_button.click()
-            # print('---- Toast was eaten 🫠')
+            # print('---- Toast was eaten.')
             sleep(3)
 
 
